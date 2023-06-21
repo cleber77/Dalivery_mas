@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "897504382552",
+    "project_id": "deliverya-mas",
+    "storage_bucket": "deliverya-mas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897504382552:android:9c54ff2eb7078a603a442d",
+        "android_client_info": {
+          "package_name": "com.cleber.delivery_mas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897504382552-cdtk6vapjo35r2s31lc8clieclte8ke3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW-vIRVbFb7JMnlnnhtEuRGngHIMwhnXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897504382552-cdtk6vapjo35r2s31lc8clieclte8ke3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
