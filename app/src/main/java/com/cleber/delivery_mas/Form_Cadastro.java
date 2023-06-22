@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -80,6 +82,22 @@ public class Form_Cadastro extends AppCompatActivity {
                             });
 
                     snackbar.show();
+
+                    }else{
+
+                    String  erro ;
+
+                    try {
+                        throw task.getException();
+                    }catch (FirebaseAuthWeakPasswordException e) {
+                        erro = "coloque um senha de 6  carecteria !";
+                    }catch (FirebaseAuthInvalidCredentialsException e){
+
+                         erro = erro
+                    }
+
+                   }catch(Exception e){}
+
                 }
             }
         });
